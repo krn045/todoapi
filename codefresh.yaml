@@ -10,7 +10,7 @@ steps:
   master_clone:
     title: Cloning master repository...
     type: git-clone
-    repo: "vijaynvb/todoapi"
+    repo: "krn045/todoapi"
     revision: 'mongodb'
     stage: checkout
 
@@ -36,7 +36,7 @@ steps:
     title: Building Docker Image
     type: build
     stage: package
-    image_name: vijaynvb/todoapimysql
+    image_name: krn045/todoapimysql
     working_directory: '${{master_clone}}'
     tag: 'master'
     dockerfile: Dockerfile
